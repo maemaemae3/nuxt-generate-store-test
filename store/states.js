@@ -1,9 +1,9 @@
 export const state = () => ({
-  data: [],
+  data: ["initial"],
 })
 export const mutations = {
   async setData (state, res) {
-    state.data = res;
+    state.data.push(...res);
   },
 }
 export const actions = {
